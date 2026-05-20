@@ -15,6 +15,7 @@ view: sales_data {
     sql: ${TABLE}."Cost_of_Sales" ;;
   }
 
+
   dimension: customer_id {
     type: number
     sql: ${TABLE}."Customer_ID" ;;

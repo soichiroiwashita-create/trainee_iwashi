@@ -14,6 +14,7 @@ view: category_master {
     type: number
     sql: ${TABLE}."category_ID" ;;
   }
+
   dimension: product_category {
     type: string
     sql: ${TABLE}."product_category" ;;

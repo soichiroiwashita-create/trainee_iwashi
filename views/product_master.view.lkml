@@ -16,6 +16,7 @@ view: product_master {
     sql: ${TABLE}."Category_ID" ;;
   }
 
+
   dimension: product_id {
     type: number
     sql: ${TABLE}."Product_ID" ;;
