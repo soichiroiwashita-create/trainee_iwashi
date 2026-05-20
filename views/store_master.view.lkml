@@ -41,6 +41,7 @@ view: store_master {
     sql: ${TABLE}."Area_of_grocery_department" ;;
   }
 
+
   dimension: coffee_bar {
     type: number
     sql: ${TABLE}."Coffee_Bar" ;;

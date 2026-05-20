@@ -10,6 +10,7 @@ view: member_info {
           where
             {% condition birthday%} TO_DATE("Birthday",'YYYY/MM/DD') {% endcondition%};;
     }
+
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
 #  sql_table_name: "DATA_SETS"."Member_Info" ;;

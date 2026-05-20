@@ -37,7 +37,6 @@ view: sales_data {
     sql: TO_DATE(${TABLE}."Sales_Date",'YYYY/MM/DD') ;;
   }
 
-
   dimension: order_date_key {
     type: number
     sql: ${TABLE}."Order_date_KEY" ;;

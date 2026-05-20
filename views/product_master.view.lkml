@@ -11,7 +11,6 @@ view: product_master {
     # A dimension is a groupable field that can be used to filter query results.
     # This dimension will be called "Category ID" in Explore.
 
-
   dimension: category_id {
     type: number
     sql: ${TABLE}."Category_ID" ;;

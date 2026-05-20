@@ -19,7 +19,6 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 #   }
 # }
 
-
     explore: sales_data {
       join: store_master {
         type: left_outer
