@@ -24,6 +24,7 @@ view: budget_data {
     sql: ${TABLE}."Budget_Amount" ;;
   }
 
+
   dimension: budget_year {
     type: string
     sql: ${TABLE}."Budget_Year" ;;

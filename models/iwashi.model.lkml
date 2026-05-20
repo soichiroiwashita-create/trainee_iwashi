@@ -63,3 +63,10 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
         sql_on: ${category_master.category_id} = ${category_master.category_id} ;;
       }
     }
+    explore: member_info {
+      join: sales_data {
+        type: left_outer
+        relationship: one_to_many
+        sql_on: ${member_info.customer_id} = ${sales_data.customer_id} ;;
+      }
+    }

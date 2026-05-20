@@ -94,4 +94,9 @@ view: sales_data {
   measure: count {
     type: count
   }
+
+  measure: q {
+    type: sum
+    sql: ${TABLE}."Quantity" ;;
+  }
 }

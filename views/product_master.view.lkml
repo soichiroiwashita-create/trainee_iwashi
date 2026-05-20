@@ -26,6 +26,7 @@ view: product_master {
     type: string
     sql: ${TABLE}."Product_Name" ;;
   }
+
   measure: count {
     type: count
     drill_fields: [product_name]
