@@ -26,16 +26,18 @@ view: sales_data {
     sql: ${TABLE}."Gross_Profit" ;;
   }
 
-  dimension_group: period {
+  dimension_group: created {
     type: time
     datatype: datetime
     timeframes: [
       date,
       week,
-      month
+      month,
+      year
     ]
-    sql: ${TABLE}."Sales_Date";;
+    sql: TO_DATE(${TABLE}."Sales_Date",'YYYY/MM/DD') ;;
   }
+
 
   dimension: order_date_key {
     type: number
@@ -57,7 +59,7 @@ view: sales_data {
     sql: ${TABLE}."Sales" ;;
   }
 
-  dimension: sales_date_2 {
+  dimension: sales_date {
     type: string
     sql: ${TABLE}."Sales_Date" ;;
   }

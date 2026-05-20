@@ -12,6 +12,7 @@ view: product_master {
     # This dimension will be called "Category ID" in Explore.
 
 
+
   dimension: category_id {
     type: number
     sql: ${TABLE}."Category_ID" ;;

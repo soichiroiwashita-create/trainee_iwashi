@@ -56,6 +56,12 @@ view: member_info {
     sql: ${TABLE}."Number_of_Members" ;;
   }
 
+  dimension: customer_location {
+    type: location
+    sql_latitude: ${TABLE}."Latitude" ;;
+    sql_longitude: ${TABLE}."Longitude" ;;
+  }
+
   measure: member_amount {
     type: sum
     label: "合計会員数"
